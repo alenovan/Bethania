@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('GeosansLight'), url('../fonts/GeosansLight.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'GeosansLight-Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('GeosansLight-Oblique'), url('../fonts/GeosansLight-Oblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'deadlyinked';
+  src: local('deadlyinked bold'),
+       url('../fonts/deadlyinked.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas Neue Regular'), url('../fonts/BebasNeue Regular.woff') format('woff');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.menu{
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    font-family: 'GeosansLight';
+}
+.menu nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+.menu nav ul.deks {
+    display: inline-flex;
+}
+.menu nav ul.deks li{
+    float: none;
+    padding: 0 30px;
+}
+.menu nav ul.deks li a:last-child {
+  margin-right: 0;
+}
+
+.menu nav ul.deks li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.menu nav ul.deks li a:hover:after {
+    width: 100%;
+    background: #f9d5c7;
+}
+.menu nav ul.deks a {
+    color: #0a0a0a;
+    font-size: 17px;
+    padding: 0;
+}
+.menu nav ul.deks a:hover {
+    background-color: transparent;
+}
+
+.owl-carousel .owl-item img {
+    width: 32%;
+    margin: 0 auto;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: #9b9c9c;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #5a5a5a;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 55px;
+}
+
+.sosmed ul{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 70px;
+}
+.sosmed ul li {
+    display: inline-block;
+    padding: 0 8px;
+}
+.sosmed img {
+    width: 30px;
+}
+
+.logo{
+    margin: 45px 0;
+    margin-bottom: 0px;
+}
+.logo img{
+    width: 28%;
+}
+
+#header{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(../images/bg.jpg) no-repeat center;
+    position: relative;
+}
+.titel-text {
+    color: #fff;
+    font-size: 10em;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+/*Content 1*/
+.conten-1{
+    min-height: 450px;
+    height: auto;
+    background: url(../images/bg-content1.jpg) no-repeat left;
+    background-size: 20%;
+    font-family: 'GeosansLight';
+    font-size: 18px;
+}
+.border img{
+    width: 52%;
+}
+.hungry{
+    font-family: deadlyinked;
+    font-size: 33px;
+}
+.taste{
+    font-family: 'Bebas Neue Regular';
+    font-weight: bold;
+    font-size: 64px;
+}
+
+/*Content 2*/
+.content-2 {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background: url(../images/bg-content2.jpg) no-repeat center;
+}
+.content-2 > .container {
+    width: 100%;
+    max-width: 100%;
+    /*min-height: */
+}
+.content-2 > .container > .row {
+    margin: 0;
+}
+.content-2 > .container > .row > .col {
+    padding: 0;
+}
+.tabs-content.carousel.initialized {
+    height: 660px !important;
+}
+.tabs-men{
+    border-top: 1px solid #f0f0f0;
+    height: 69px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.tabs-men .tab {
+    height: 69px;
+}
+.tabs-men .tab a {
+    color: #acacac;
+    padding: 6px 0;
+    background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF);
+    background-size: 1px 75%;
+    background-position: 0, 0, 0, 0;
+    /*background-position: 0px 10px, 0px, 0;*/
+    background-repeat: no-repeat;
+}
+.tabs-men .tab:nth-last-child(2) a {
+    background-position: 0, 100%, 0px, 0;
+}
+/*.tabs-men > .tab > a:last-child{
+    background-position: 0 0, 100% 0;*
+}*/
+.tabs-men > .tab > a > i{
+    color: #f8c433;
+}
+.tabs-men .tab a:hover i, .tabs-men .tab a.active i{
+    color: #fff;
+}
+.tabs-men .tab a p{
+    padding: 0;
+    margin-top: -27px;
+}
+.tabs-men .tab a:hover, .tabs-men .tab a.active {
+    background-size: 0px 75%;
+    color: #fefaf2;
+    background-color: #f8c433;
+    border: none;
+    transition: 0.2s;
+    z-index: 999;
+    position: relative;
+}
+.tabs-men .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    background-color: #f8c433;
+    will-change: left, right;
+}
+
+.t1-menu{
+    font-family: deadlyinked;
+    color: #fad05e;
+    font-size: 70px;
+    margin: 0;
+}
+.t2-menu{
+    font-family: 'Bebas Neue Regular';
+    font-weight: bold;
+    font-size: 42px;
+    margin: 0;
+}
+.menu-content{
+    margin-top: 40px;
+    font-family: 'GeosansLight';
+}
+.menu-content > span{
+    font-size: 29px;
+    color: #2f2f2f;
+}
+.menu-content > p{
+    margin: 0;
+    font-size: 18px;
+    color: #9a9a99;
+}
+.menu-image{
+    position: absolute;
+    right: 0;
+    top: 130%;
+}
+.menu-btn{
+    color: #191919;
+    font-family: 'Bebas Neue Regular';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px 3px;
+    border: 2px solid #fad05e;
+}
+.menu-btn > .txt{
+    padding-left: 15px;
+}
+.menu-btn > .icon{
+    padding-left: 14px;
+    padding-right: 7px;
+}
+.menu-btn > .icon > img{
+    vertical-align: middle;
+}
+
+/*Content Map*/
+.content-map{
+    border-top: 10px solid #f6edc2;
+    border-bottom: 10px solid #f6edc2;
+}
+
+/*Content 3*/
+.content-3 {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    padding: 50px 0;
+    background: url(../images/bg-content3.jpg) no-repeat center top;
+}
+.content-3 > .container {
+    width: 65%;
+}
+.content-3 > .title {
+    text-align: center;
+}
+.content-3 > .title > .t1 {
+    font-size: 36px;
+    font-family: deadlyinked;
+    color: #9d9d9d;
+}
+.content-3 > .title > .t2 {
+    font-size: 50px;
+    font-family: 'Bebas Neue Regular';
+    margin-top: -20px;
+    font-weight: bold;
+}
+.content-3 > .soup{
+    position: absolute;
+    left: 0;
+}
+.content-3 > .container > .row > .col > .event-date{
+    font-family: deadlyinked;
+    font-size: 20px;
+    background: #fad05e;
+    color: #fff;
+    padding: 5px 0;
+    z-index: 3;
+    position: relative;
+    margin-top: 9px;
+    width: 85%;
+    text-align: center;
+    float: right;
+}
+.event-det {
+    background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF);
+    background-size: 2px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+}
+.event-det h4 {
+    font-family: 'Bebas Neue Regular';
+    margin: 0;
+    font-size: 26px;
+    font-weight: bolder;
+}
+.event-det p {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 12px;
+    /* text-align: justify; */
+    line-height: 1em;
+    font-family: 'GeosansLight';
+    color: #000;
+}
+.event-more{
+    text-align: center;
+    margin: 15px 0;
+}
+.event-more a{
+    font-family: 'GeosansLight';
+    color: black;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #fad05e;
+}
+.event{
+    margin-bottom: 50px;
+}
+.event-btn{
+    color: #828282;
+    font-family: 'Bebas Neue Regular';
+    font-size: 17px;
+    padding: 12px 2px;
+    border: 2px solid #fad05e;
+}
+.event-btn > .txt{
+    padding-left: 15px;
+}
+.event-btn > .icon{
+    padding-left: 14px;
+    padding-right: 7px;
+}
+.event-btn > .icon > img{
+    vertical-align: middle;
+}
+/*Menu Bottom*/
+.menu-bottom{
+    width: 100%;
+    height: auto;
+    min-height: 30px;
+    background: url(../images/menu-bot.jpg) no-repeat center;
+    padding: 15px 0;
+}
+.menu-bottom > ul {
+    margin: 0;
+    text-align: center;
+}
+.menu-bottom > ul > li {
+    display: inline-block;
+}
+.menu-bottom > ul > li {
+  padding-left: 1em;
+  text-indent: -.7em;
+  margin: 0px 66px;
+}
+.menu-bottom > ul > li::before {
+  content: "\2022 ";
+  color: #606060;
+  font-size: 17px;
+  font-weight: bold;
+  padding-right: 7px;
+}
+.menu-bottom > ul > li > a {
+    color: #c1c1c1;
+    padding: 0;
+    font-size: 17px;
+    font-family: 'Bebas Neue Regular';
+}
+
+footer{
+    background-color: #1f1f1f;
+    height: 55px;
+    font-family: 'GeosansLight';
+    text-align: center;
+    padding: 15px 0;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+footer a{
+    color: #5e5e5e;
+    font-weight: bold;
+}
+
+/*Responsive*/
+@media screen and ( min-width: 601px ){
+    .menu nav {
+        line-height: 43px;
+    }
+}
+@media screen and ( max-width: 768px ){
+    .menu{
+        margin-top: 70px;
+    }
+    .logo img {
+        width: 55%;
+    }
+    .sosmed ul {
+        margin-bottom: 77px;
+    }
+    .sosmed img {
+        width: 45px;
+    }
+    .owl-carousel .owl-item img {
+        width: 70%;
+    }    .menu-bottom > ul {
+            margin: 0;
+            text-align: left;
+            -moz-column-count: 3;
+            -moz-column-gap: 20px;
+            -webkit-column-count: 3;
+            -webkit-column-gap: 20px;
+            column-count: 3;
+            column-gap: 20px;
+        }
+
+}
+@media screen and ( max-width: 660px ){
+    .menu{
+        margin-top: 10px;
+    }
+    .logo img {
+        width: 44%;
+    }
+    .sosmed ul {
+        margin-bottom: 40px;
+    }
+    .sosmed img {
+        width: 33px;
+    }
+    .owl-carousel .owl-item img {
+        width: 58%;
+    }
+    .t1-menu{
+        font-size: 60px;
+    }
+    .t2-menu{
+        font-size: 35px;
+    }
+    .menu-content {
+        margin-top: 18px;
+    }
+    .menu-content > span {
+        font-size: 25px;
+    }
+    .menu-content > p {
+        font-size: 18px;
+    }
+    .menu-image {
+        top: 130%;
+        width: 50%;
+        right: 0px;
+    }
+    .tabs-content.carousel.initialized {
+        height: 600px !important;
+    }
+    .menu-bottom > ul {
+        margin: 0;
+        text-align: left;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+    }
+    .event-det{
+        text-align: center;
+    }
+}
+@media screen and ( max-width: 440px ){
+    .menu{
+        margin-top: 32px;
+    }
+    .logo img {
+        width: 66%;
+    }
+    .sosmed ul {
+        margin-bottom: 40px;
+    }
+    .sosmed img {
+        width: 33px;
+    }
+    .owl-carousel .owl-item img {
+        width: 80%;
+    }
+    .tabs-content > .col > .container > .row > .s7 {
+        width: 100% !important;
+    }
+    .tabs-content > .col > .container > .row > .s5 {
+        display: none !important;
+    }
+    .content-3 > .soup{
+        display: none;
+    }
+    .content-3 > .container > .row > .col > .event-date {
+        width: 55%;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .event {
+        margin-bottom: 35px;
+    }
+    .menu-bottom {
+        background: url(../images/menu-bot.jpg) repeat-y center;
+    }
+
+}
