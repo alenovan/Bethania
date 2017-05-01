@@ -38,23 +38,27 @@
                 </div>
             </div>
         </div>
+        <!-- Start Content 1 -->
         <div class="conten-1">
             <div class="container">
                 <div class="row">
                     <div class="col s12">
                         <br><br>
-                        <div class="center hungry wow zoomIn">are you hungry ?</div>
-                        <div class="center taste wow zoomIn">PRECIOUS TASTE !</div>
+                        <div class="center hungry wow zoomIn" id="judul_content_1">are you hungry ?</div>
+                        <div class="center taste wow zoomIn" id="sub_judul_content_1">PRECIOUS TASTE !</div>
                         <div class="center border wow fadeIn">
                             <img src="<?php echo base_url(); ?>assets/images/border.png" class="responsive-img">
                         </div>
-                        <p class="center wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        <p class="center wow fadeIn" id="isi_content_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                         <br>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End Content 1 -->
+
+        <!-- Start Content 2 -->
         <div class="content-2">
             <div class="container">
                 <div class="row">
@@ -93,8 +97,8 @@
                                         <h2 class="t1-menu">Always Fresh</h2>
                                         <h2 class="t2-menu">FEATURED DINNER</h2>
                                         <div class="menu-content">
-                                            <span>Tumis kangkung pedas banyuwangi</span>
-                                            <p>( tambahan 20k untuk porsi besar )</p>
+                                            <span id="content2_judul">Tumis kangkung pedas banyuwangi</span>
+                                            <p id="content_sub_judul">( tambahan 20k untuk porsi besar )</p>
                                         </div>
                                         <div class="menu-content">
                                             <span>Tumis sawi pedas + Sambal ijo</span>
@@ -125,7 +129,7 @@
                                 <div class="row">
                                     <div class="col s7">
                                         <br><br>
-                                        <h2 id="t1" class="t1-menu">Always Fresh</h2>
+                                        <h2 id="t1" class="t1-menu">Always Fresha</h2>
                                         <h2 id="t2" class="t2-menu">FEATURED DINNER</h2>
                                         <div class="menu-content">
                                             <span>Tumis kangkung pedas banyuwangi</span>
@@ -230,10 +234,13 @@
             </div>
         </div>
 
+        <!-- End Content 2 -->
+
         <div class="content-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.2404691045276!2d112.51260331437398!3d-7.869886994330006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78873717720cbf%3A0xd8dcafe467519101!2sBatu+Web+Design!5e0!3m2!1sen!2sid!4v1493263842770" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
+        <!-- Start Content 3 -->
         <div class="content-3">
             <div class="soup">
                 <img src="<?php echo base_url(); ?>assets/images/menu2.png" width="220px" class="responsive-img">
@@ -308,5 +315,6 @@
                 <br>
             </div>
         </div>
+        <!-- End Content 3 -->
 
        

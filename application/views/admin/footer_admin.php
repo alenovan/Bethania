@@ -22,20 +22,10 @@
 	<script src="<?php echo base_url(); ?>assets/js/demo.js"></script>
 
 	<script type="text/javascript">
-    	// $(document).ready(function(){
-
-     //    	demo.initChartist();
-
-     //    	$.notify({
-     //        	icon: 'pe-7s-gift',
-     //        	message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
-
-     //        },{
-     //            type: 'info',
-     //            timer: 4000
-     //        });
-
-    	// });
-	</script>
+        function to_page(link) {
+         $("#content-admin").load(link);
+               
+        }
+    </script>
 
 </html>

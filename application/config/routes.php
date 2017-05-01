@@ -54,3 +54,19 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['admin'] = 'Controller_dashboard_admin';
+$route['dashboard'] = 'Controller_dashboard_admin/dashboard';
+
+// User Routes
+$route[md5(SHA1(md5('user')))] = 'Controller_user';
+$route[md5(SHA1(md5('user/add/view')))] = 'Controller_user/add_view';
+
+// Slider
+$route[md5(SHA1(md5('slider')))] = 'Controller_slider';
+// Content 1
+$route[md5(SHA1(md5('content1')))] = 'Controller_content1';
+$route[md5(SHA1(md5('content1/add')))] = 'Controller_content1/add_content1';
+// Content 2
+$route[md5(SHA1(md5('content2')))] = 'Controller_content2';
+$route[md5(SHA1(md5('content2/add')))] = 'Controller_content2/add_content2';
+// Content 3
+$route[md5(SHA1(md5('content3')))] = 'Controller_content3';
