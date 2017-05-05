@@ -22,7 +22,7 @@
                                         foreach ($show_slider as $content ) { ?>    
                                         <tr>
                                         	<td><?php echo $no; ?></td>
-                                            <td></td>
+                                            <td><input type="button" value="Preview" class="btn btn-success"> </td>
                                         	<td><center><a href="<?php echo md5('slider/edit/view');?>/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p>
                                                 <input type="button" Value="Hapus" class="btn btn-danger"></center></td>
                                         </tr>

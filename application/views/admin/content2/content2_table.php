@@ -17,8 +17,6 @@
                                     	<th>Judul</th>
                                     	<th>Sub Judul</th>
                                     	<th>Kategori</th>
-                                    	<th>Isi</th>
-                                        <th>Preview</th>
                                         <th>Action</th>
                                     </thead>
                                      <tbody>
@@ -30,9 +28,8 @@
                                             <td><?php echo $content->judul_content; ?></td>
                                             <td><?php echo $content->sub_judul; ?></td>
                                             <td><?php echo $content->kategory_id; ?></td>
-                                            <td><?php echo $content->isi_content; ?></td>
-                                            <td><?php echo $content->sub_judul; ?></td>
-                                            <td>Oud-Turnhout</td>
+                                            <td><center><a href="<?php echo md5('content2/edit/view');?>/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p>
+                                                <input type="button" Value="Hapus" class="btn btn-danger"></center></td>
                                         </tr>
                                         <?php $no++;}?>
                                         

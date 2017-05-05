@@ -27,7 +27,7 @@
                                         	<td><?php echo $content->judul_content; ?></td>
                                         	<td><?php echo $content->sub_judul; ?></td>
                                         	<td><?php echo $content->isi_content; ?></td>
-                                        	<td><center><a href="<?php echo md5('content1/edit/view');?>/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p>
+                                        	<td><<a href="<?php echo md5('content1/edit/view');?>/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p>
                                                 <input type="button" Value="Hapus" class="btn btn-danger"></center></td>
                                         </tr>
                                         <?php $no++;}?>

@@ -22,10 +22,17 @@
                         <p>Table User</p>
                     </a>
                 </li>
-                <li>
+
+                 <li>
                     <a href="<?php echo md5(SHA1(md5('slider')))?>">
                         <i class="pe-7s-note2"></i>
                         <p>Table Slider 1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo md5(SHA1(md5('content2/add/slider')))?>">
+                        <i class="pe-7s-note2"></i>
+                        <p>Table Slider 2</p>
                     </a>
                 </li>
                 <li>

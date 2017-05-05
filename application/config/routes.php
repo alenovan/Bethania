@@ -78,10 +78,19 @@ $route['content1/edit/(:any)'] = 'Controller_content1/edit_content1/$i';
 $route[md5(SHA1(md5('content2')))] = 'Controller_content2';
 $route[md5(SHA1(md5('content2/add')))] = 'Controller_content2/add_content2';
 $route[md5(SHA1(md5('content2/add/data')))] = 'Controller_content2/add_content2_data';
+$route[md5('content2/edit/view').'/(:any)'] = 'Controller_content2/editview_data_content2/$i';
+$route['content2/edit/(:any)'] = 'Controller_content2/edit_content2_data/$i';
+// Content2/slider
+$route[md5(SHA1(md5('content2/slider/view')))] = 'Controller_content2/slider2_view';
 $route[md5(SHA1(md5('content2/add/slider')))] = 'Controller_content2/add_slider_content2';
+$route[md5(SHA1(md5('content2/add/slider/data')))] = 'Controller_content2/add_slider2';
+
+
 // Content 3
 $route[md5(SHA1(md5('content3')))] = 'Controller_content3';
 $route[md5(SHA1(md5('content3/add')))] = 'Controller_content3/add_content3';
 $route[md5(SHA1(md5('content3/add/data')))] = 'Controller_content3/add_content3_data';
 $route[md5('content3/edit/view').'/(:any)'] = 'Controller_content3/edit_view/$i';
 $route['content3/edit/(:any)'] = 'Controller_content3/edit_content3/$i';
+
+
