@@ -5,7 +5,7 @@
                             <div class="header">
                                 <h4 class="title">Tambah Profile</h4>
                             </div> 
-                              <form action="" method="POST" >
+                              <form action="<?php echo md5(SHA1(md5('user/add')))?>" method="POST" >
                                  
                             <div class="content">
                                    <div class="row">
@@ -13,13 +13,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Username</label>
-                                                <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="" >
+                                                <input type="text" class="form-control" id="username_akun" name="username_akun" placeholder="Username" value="" >
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email</label>
-                                                <input type="email" class="form-control" placeholder="Email" id="email" name="email" >
+                                                <input type="email" class="form-control" placeholder="Email" id="email_akun" name="email_akun" >
                                             </div>
                                         </div>
                                     </div>
@@ -28,7 +28,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Password</label>
-                                                <input type="password" class="form-control" placeholder="Company" value="" id="password" name="password" >
+                                                <input type="password" class="form-control" placeholder="Company" value="" id="password_akun" name="password_akun" >
                                             </div>
                                         </div>
                                        
@@ -74,15 +74,15 @@
 
            <script type="text/javascript">
 
-            document.getElementById("username").onkeyup = function() {
+            document.getElementById("username_akun").onkeyup = function() {
             document.getElementById("name_baru").innerHTML = "Nama : "+this.value;   
             }
 
-            document.getElementById("email").onkeyup = function() {
+            document.getElementById("email_akun").onkeyup = function() {
             document.getElementById("email_baru").innerHTML ="Email : " +this.value;   
             }
 
-            document.getElementById("password").onkeyup = function() {
+            document.getElementById("password_akun").onkeyup = function() {
             document.getElementById("password_baru").innerHTML ="Password : " +"**********";   
             }
 

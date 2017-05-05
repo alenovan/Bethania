@@ -59,14 +59,29 @@ $route['dashboard'] = 'Controller_dashboard_admin/dashboard';
 // User Routes
 $route[md5(SHA1(md5('user')))] = 'Controller_user';
 $route[md5(SHA1(md5('user/add/view')))] = 'Controller_user/add_view';
-
+$route[md5(SHA1(md5('user/add')))] = 'Controller_user/add_user';
+$route[md5('user/edit/view').'/(:any)'] = 'Controller_user/edit_view/$i';
+$route['user/edit/(:any)'] = 'Controller_user/edit_user/$i';
 // Slider
 $route[md5(SHA1(md5('slider')))] = 'Controller_slider';
+$route[md5(SHA1(md5('slider/add')))] = 'Controller_slider/add_slider';
+$route[md5(SHA1(md5('slider/add/data')))] = 'Controller_slider/add_slider_data';
+$route[md5('slider/edit/view').'/(:any)'] = 'Controller_slider/edit_view/$i';
+$route['slider/edit/(:any)'] = 'Controller_slider/edit_slider/$i';
 // Content 1
 $route[md5(SHA1(md5('content1')))] = 'Controller_content1';
-$route[md5(SHA1(md5('content1/add')))] = 'Controller_content1/add_content1';
+$route[md5(SHA1(md5('content1/add')))] = 'Controller_content1/add_content1_view';
+$route[md5(SHA1(md5('content1/add/data')))] = 'Controller_content1/add_content1';
+$route[md5('content1/edit/view').'/(:any)'] = 'Controller_content1/edit_view/$i';
+$route['content1/edit/(:any)'] = 'Controller_content1/edit_content1/$i';
 // Content 2
 $route[md5(SHA1(md5('content2')))] = 'Controller_content2';
 $route[md5(SHA1(md5('content2/add')))] = 'Controller_content2/add_content2';
+$route[md5(SHA1(md5('content2/add/data')))] = 'Controller_content2/add_content2_data';
+$route[md5(SHA1(md5('content2/add/slider')))] = 'Controller_content2/add_slider_content2';
 // Content 3
 $route[md5(SHA1(md5('content3')))] = 'Controller_content3';
+$route[md5(SHA1(md5('content3/add')))] = 'Controller_content3/add_content3';
+$route[md5(SHA1(md5('content3/add/data')))] = 'Controller_content3/add_content3_data';
+$route[md5('content3/edit/view').'/(:any)'] = 'Controller_content3/edit_view/$i';
+$route['content3/edit/(:any)'] = 'Controller_content3/edit_content3/$i';

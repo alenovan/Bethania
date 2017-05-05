@@ -3,64 +3,35 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">List User</h4>
-                                <p class="category">List User From Bethania</p>
+                                <h4 class="title">List Content 3</h4>
+                                <p class="category">List Content3 From Bethania</p>
                             </div>
                             <div align="right" class="header">
-                             <a href="<?php echo md5(SHA1(md5('user/add/view')))?>"><input type="button" class="btn btn success" Value="Tambah Data"></a>
+                             <a href="<?php echo md5(SHA1(md5('content3/add')))?>"><input type="button" class="btn btn success" Value="Tambah Data"></a>
                              </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">
                                     <thead>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Salary</th>
-                                        <th>Country</th>
-                                        <th>City</th>
+                                        <th>No</th>
+                                        <th>Judul</th>
+                                        <th>Sub Judul</th>
+                                        <th>Create At</th>
+                                        <th>Action</th>
                                     </thead>
                                     <tbody>
+                                        <?php 
+                                        $no = 1 ;
+                                        foreach ($show_content3 as $content ) { ?>    
                                         <tr>
-                                            <td>1</td>
-                                            <td>Dakota Rice</td>
-                                            <td>$36,738</td>
-                                            <td>Niger</td>
-                                            <td>Oud-Turnhout</td>
+                                            <td><?php echo $no; ?></td>
+                                            <td><?php echo $content->judul_content; ?></td>
+                                            <td><?php echo $content->sub_judul; ?></td>
+                                            <td><?php echo $content->create_at; ?></td>                                            
+                                            <td><center><a href="<?php echo md5('content3/edit/view');?>/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p>
+                                                <input type="button" Value="Hapus" class="btn btn-danger"></center></td>
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Minerva Hooper</td>
-                                            <td>$23,789</td>
-                                            <td>Curaçao</td>
-                                            <td>Sinaai-Waas</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Sage Rodriguez</td>
-                                            <td>$56,142</td>
-                                            <td>Netherlands</td>
-                                            <td>Baileux</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Philip Chaney</td>
-                                            <td>$38,735</td>
-                                            <td>Korea, South</td>
-                                            <td>Overland Park</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Doris Greene</td>
-                                            <td>$63,542</td>
-                                            <td>Malawi</td>
-                                            <td>Feldkirchen in Kärnten</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Mason Porter</td>
-                                            <td>$78,615</td>
-                                            <td>Chile</td>
-                                            <td>Gloucester</td>
-                                        </tr>
+                                        <?php $no++;}?>
+                                        
                                     </tbody>
                                 </table>
 
