@@ -17,38 +17,38 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo md5(SHA1(md5('user')))?>">
+                    <a href="<?php echo base_url(); ?>user">
                         <i class="pe-7s-user"></i>
                         <p>Table User</p>
                     </a>
                 </li>
 
                  <li>
-                    <a href="<?php echo md5(SHA1(md5('slider')))?>">
+                    <a href="<?php echo base_url(); ?>slider">
                         <i class="pe-7s-note2"></i>
                         <p>Table Slider 1</p>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo md5(SHA1(md5('content2/add/slider')))?>">
+                    <a href="<?php echo base_url(); ?>content2/slider/view">
                         <i class="pe-7s-note2"></i>
                         <p>Table Slider 2</p>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo md5(SHA1(md5('content1')))?>">
+                    <a href="<?php echo base_url(); ?>content1">
                         <i class="pe-7s-note2"></i>
                         <p>Table Content 1</p>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo md5(SHA1(md5('content2')))?>">
+                    <a href="<?php echo base_url(); ?>content2">
                         <i class="pe-7s-note2"></i>
                         <p>Table Content 2</p>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo md5(SHA1(md5('content3')))?>">
+                    <a href="<?php echo base_url(); ?>content3">
                         <i class="pe-7s-note2"></i>
                         <p>Table Content 3</p>
                     </a>
@@ -189,3 +189,4 @@
 
 
 </body>
+

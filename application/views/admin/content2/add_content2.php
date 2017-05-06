@@ -5,7 +5,7 @@
                             <div class="header">
                                 <h4 class="title">Tambah Content 2</h4>
                             </div> 
-                              <form action="<?php echo md5(SHA1(md5('content2/add/data')));?>" method="POST" >
+                              <form action="<?php echo base_url(); ?>content2/add/data" method="POST" >
                                  
                             <div class="content">
                                    <div class="row">

@@ -44,7 +44,7 @@ class Controller_user extends CI_Controller {
 
     public function edit_view()
     {
-        $id = $this->uri->segment(2);
+        $id = $this->uri->segment(4);
         $data['content'] = 'admin/user/user_edit';
         $data['edit_user'] = $this->user->select_edit($id);
         $this->load->view('admin/menu_admin', $data);
@@ -64,6 +64,12 @@ class Controller_user extends CI_Controller {
                         );
         $this->user->update($id,$edit_user);
         redirect('Controller_user');
+    }
+
+    public function delete_akun(){ 
+                $id = $this->uri->segment(2);
+                $this->user->delete($id);
+                redirect('Controller_user');
     }
 
 }

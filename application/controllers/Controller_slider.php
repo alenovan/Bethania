@@ -32,7 +32,7 @@ class Controller_slider extends CI_Controller {
 		public function add_slider_data(){
 		
 
-					$config['upload_path']   = './assets/images/upload';
+					$config['upload_path']   = './assets/images/upload/slider1';
                     $config['allowed_types'] =   "gif|jpg|jpeg|png"; 
                     $config['max_size']      =   "5000";
                     $config['width']         =   "300";
@@ -86,20 +86,17 @@ class Controller_slider extends CI_Controller {
 
        public function edit_view()
     {
-        $id = $this->uri->segment(2);
+        $id = $this->uri->segment(4);
         $data['content'] = 'admin/slider/edit_slider';
         $data['slider'] = $this->slider->select_edit($id);
         $this->load->view('admin/menu_admin', $data);
     }
 
     public function edit_slider(){
-
                     $id = $this->uri->segment(3);
-
                     $hapus_slider = $this->input->post('hapus_gambar');
                     $cek_gambar = $this->input->post('cek_gambar');
                     $file = $this->input->post('userfile');
-
                     if($cek_gambar == 1 ){
                             unlink($hapus_slider);
                         //echo "hapus";
@@ -108,8 +105,7 @@ class Controller_slider extends CI_Controller {
                    }
                     
                   
-
-                    $config['upload_path']   = './assets/images/upload';
+                    $config['upload_path']   = './assets/images/upload/slider1';
                     $config['allowed_types'] =   "gif|jpg|jpeg|png"; 
                     $config['max_size']      =   "5000";
                     $config['width']         =   "300";
@@ -119,8 +115,8 @@ class Controller_slider extends CI_Controller {
 
                     if(!$this->upload->do_upload())
                     {
-                       // echo $this->upload->display_errors();
-                        redirect('Controller_slider');
+                        //echo $this->upload->display_errors();
+                       redirect('Controller_slider');
                     }else{
                         
                         $finfo=$this->upload->data();
@@ -128,17 +124,17 @@ class Controller_slider extends CI_Controller {
                         $this->content->update($id,$add_content);
                         //print_r($finfo);
                         $cid = $this->getLastContent();
-                $add_file=array(
-                     'nama_file'            =>  $finfo['file_name'],
-                     'tanggal_file'         =>  date('y-m-d'), 
-                     'size_file'            =>  $finfo['file_size'],
-                     'dir_file'             =>  $finfo['file_path'],
-                     'type_file'            =>  $finfo['file_ext'],
-                     'table_id'             =>  $cid ,
-                     'table'                =>   'tb_content',
-                     'create_at'            =>  date('y-m-d') ,
-                     'update_at'            =>  date('y-m-d')              
-               );
+                        $add_file=array(
+                         'nama_file'            =>  $finfo['file_name'],
+                         'tanggal_file'         =>  date('y-m-d'), 
+                         'size_file'            =>  $finfo['file_size'],
+                         'dir_file'             =>  $finfo['file_path'],
+                         'type_file'            =>  $finfo['file_ext'],
+                         'table_id'             =>  $cid ,
+                         'table'                =>   'tb_content',
+                         'create_at'            =>  date('y-m-d') ,
+                         'update_at'            =>  date('y-m-d')              
+                );
                 $this->file->update($id,$add_file);
                 $add_slider=array(
                      'create_at'            =>  date('y-m-d') ,
@@ -147,10 +143,20 @@ class Controller_slider extends CI_Controller {
                );
                 $this->slider->update($id,$add_slider);
 
-                redirect('Controller_slider');
+               redirect('Controller_slider');
              
          }
     
     }
+
+    public function delete_slider(){ 
+    $id = $this->uri->segment(3);
+    $hapus_gambar = $this->input->post('hapus_gambar');
+    unlink($hapus_gambar);
+    $this->content->delete($id);
+    $this->file->delete($id);
+    $this->slider->delete($id);
+    redirect('Controller_slider');
+  }
 
 }
