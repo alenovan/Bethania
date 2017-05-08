@@ -53,6 +53,20 @@
                         <p>Table Content 3</p>
                     </a>
                 </li>
+
+                <li>
+                    <a href="<?php echo base_url(); ?>content3">
+                        <i class="pe-7s-note2"></i>
+                        <p>Menu Makanan </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="<?php echo base_url(); ?>content3">
+                        <i class="pe-7s-note2"></i>
+                        <p>Menu Minuman</p>
+                    </a>
+                </li>
               <!--   <li>
                     <a href="notifications.html">
                         <i class="pe-7s-bell"></i>

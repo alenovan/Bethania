@@ -27,8 +27,10 @@
                             <td><?php echo $content->judul_content; ?></td>
                             <td><?php echo $content->sub_judul; ?></td>
                             <td><?php echo $content->create_at; ?></td>                                            
-                            <td><center><a href="<?php echo base_url(); ?>content3/edit/edit_view/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p></a>
-                                <input type="button" Value="Hapus" class="btn btn-danger" data-toggle="modal" data-target="#delete_content3<?php echo $content->id_content;?>"></center></td>
+                            <td>
+                              <a class="btn btn-admin btn-info" href="<?php echo base_url(); ?>content3/edit/edit_view/<?php echo $content->id_content;?>"><i class="pe-7s-info icon-btn"></i>Detail</a>
+                              <a href="" type="button" class="btn btn-admin btn-info" data-toggle="modal" data-target="#delete_content3<?php echo $content->id_content;?>"><i class="pe-7s-trash icon-btn"></i>Hapus</a>
+                            </td>
                             </tr>
                             <?php $no++;}?>
                             

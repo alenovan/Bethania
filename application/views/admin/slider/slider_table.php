@@ -22,9 +22,13 @@
                                         foreach ($show_slider as $content ) { ?>    
                                         <tr>
                                         	<td><?php echo $no; ?></td>
-                                            <td><input type="button" value="Preview" class="btn btn-success"> </td>
-                                        	<td><center><a href="<?php echo base_url(); ?>slider/edit/view/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p></a>
-                                                <input type="button" Value="Hapus" class="btn btn-danger" data-toggle="modal" data-target="#delete_slider<?php echo $content->id_content;?>"></center></td>
+                                            <td><a class="btn btn-admin btn-info" href="">Preview</a></td>
+                                            <td>
+                                              <a class="btn btn-admin btn-info" href="<?php echo base_url(); ?>slider/edit/view/<?php echo $content->id_content;?>"><i class="pe-7s-info icon-btn"></i>Detail</a>
+                                              <a href="" type="button" class="btn btn-admin btn-info" data-toggle="modal" data-target="#delete_slider<?php echo $content->id_content;?>"><i class="pe-7s-trash icon-btn"></i>Hapus</a>
+                                            </td>
+                                        	<!-- <td><center><a href="<?php echo base_url(); ?>slider/edit/view/<?php echo $content->id_content;?>"><input type="button" value="Edit" class="btn btn-info"></p></a>
+                                                <input type="button" Value="Hapus" class="btn btn-danger" data-toggle="modal" data-target="#delete_slider<?php echo $content->id_content;?>"></center></td> -->
                                         </tr>
                                          <?php $no++;}?>
                                        

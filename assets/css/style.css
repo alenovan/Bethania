@@ -88,7 +88,7 @@ body {
     background: #5a5a5a;
 }
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 55px;
+    margin-top: 20px;
 }
 
 .sosmed ul{
@@ -152,6 +152,7 @@ body {
 
 /*Content 2*/
 .content-2 {
+    position: relative;
     width: 100%;
     height: auto;
     min-height: 500px;
@@ -249,7 +250,7 @@ body {
 .menu-image{
     position: absolute;
     right: 0;
-    top: 130%;
+    bottom: 13%;
 }
 .menu-btn{
     color: #191919;
@@ -486,6 +487,7 @@ footer a{
         top: 130%;
         width: 50%;
         right: 0px;
+        display: none;
     }
     .tabs-content.carousel.initialized {
         height: 600px !important;
@@ -543,3 +545,4 @@ footer a{
     }
 
 }
+

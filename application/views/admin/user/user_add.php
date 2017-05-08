@@ -38,7 +38,7 @@
 
                     
 
-                    <button type="submit"  class="btn btn-info btn-fill pull-right">Tambah Profile</button>
+                    <button type="submit"  class="btn btn-admin btn-info pull-right">Tambah Profile</button>
                     <div class="clearfix"></div>
                     
                 </div>

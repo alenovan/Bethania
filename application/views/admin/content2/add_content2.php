@@ -62,7 +62,7 @@
 
                                     
 
-                                  <button type="submit"  class="btn btn-info btn-fill pull-right">Tambah Content 1</button>
+                                  <button type="submit"  class="btn btn-admin btn-info pull-right">Tambah Content 1</button>
                                     <div class="clearfix"></div>
                                 
                             </div>

@@ -98,6 +98,11 @@ $route['content3/add/data'] = 'Controller_content3/add_content3_data';
 $route['content3/edit/edit_view/(:any)'] = 'Controller_content3/edit_view/$i';
 $route['content3/edit/(:any)'] = 'Controller_content3/edit_content3/$i';
 $route['hapus_content3/(:any)'] = 'Controller_content3/delete_content3/$i';
+// Makanan
+$route['makanan'] = 'Controller_makanan';
+$route['upload_makanan'] = 'Controller_makanan/upload_makanan';
+$route['add_makanan'] = 'Controller_makanan/add_makanan';
+$route['upload_profil'] = 'Controller_makanan/upload_profil_makanan';
 
 
 

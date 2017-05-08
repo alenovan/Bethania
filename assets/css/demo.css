@@ -59,3 +59,24 @@
 .table-upgrade td:nth-child(3){
     text-align: center;
 }
+/*Admin CSS*/
+.content-isi{
+    width: 460px;
+}
+.btn-admin{
+    background-color: #848484 ;
+    border-color:#848484;   
+    color: #fff;     
+}
+.btn-admin:hover{
+    background-color: #1DC7EA;
+    color: #fff;
+}
+.icon-btn{
+    line-height: 0;
+    /* margin-right: 0px; */
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    font-weight: bold;
+}

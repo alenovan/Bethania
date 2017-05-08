@@ -40,7 +40,7 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 if ($('#tabs-swipe-demo').length) {
-                    $('#tabs-swipe-demo').tabs({ 'swipeable': true});
+                    $('#tabs-swipe-demo').tabs({ 'swipeable': false});
                 }
             });
 

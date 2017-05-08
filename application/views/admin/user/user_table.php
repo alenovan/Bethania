@@ -28,8 +28,12 @@
              <td><?php echo $akun->email_akun?></td>
              <td>******</td>
              
-             <td><center><a href="<?php echo base_url(); ?>user/edit/view/<?php echo $akun->id_akun;?>"><input type="button" value="Edit" class="btn btn-info"></p></a>
-              <input type="button" Value="Hapus" class="btn btn-danger"   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#delete_akun<?php echo $akun->id_akun;?>"></center></td>
+             <!-- <td><center><a href="<?php echo base_url(); ?>user/edit/view/<?php echo $akun->id_akun;?>"><input type="button" value="Edit" class="btn btn-info"></p></a>
+              <input type="button" Value="Hapus" class="btn btn-danger"   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#delete_akun<?php echo $akun->id_akun;?>"></center></td> -->
+              <td>
+                <a class="btn btn-admin btn-info" href="<?php echo base_url(); ?>user/edit/view/<?php echo $akun->id_akun;?>"><i class="pe-7s-info icon-btn"></i>Detail</a>
+                <a href="" type="button" class="btn btn-admin btn-info" data-toggle="modal" data-target="#delete_akun<?php echo $akun->id_akun;?>"><i class="pe-7s-trash icon-btn"></i>Hapus</a>
+              </td>
               
             </tr>
             <?php $no++; }?>

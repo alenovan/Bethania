@@ -90,44 +90,9 @@
                             </li>
                         </ul>
                         <div id="test-swipe-1" class="col s12">
-                            <div class="container">
+                                                        <div class="container">
                                 <div class="row">
-                                    <div class="col s7">
-                                        <br><br>
-                                        <h2 class="t1-menu">Always Fresh</h2>
-                                        <h2 class="t2-menu">FEATURED DINNER</h2>
-                                        <div class="menu-content">
-                                            <span id="content2_judul">Tumis kangkung pedas banyuwangi</span>
-                                            <p id="content_sub_judul">( tambahan 20k untuk porsi besar )</p>
-                                        </div>
-                                        <div class="menu-content">
-                                            <span>Tumis sawi pedas + Sambal ijo</span>
-                                            <p>( tambahan 20k untuk porsi besar )</p>
-                                        </div>
-                                        <div class="menu-content">
-                                            <span>Cah kangkung + sambal</span>
-                                            <p>( tambahan 20k untuk porsi besar )</p>
-                                        </div>
-                                        <br><br><br>
-                                        <a class="menu-btn" href="#">
-                                            <span class="txt">OTHER DINNER MENU</span>
-                                            <span class="icon">
-                                                <img src="<?php echo base_url(); ?>assets/images/arrow-btn.png">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="col s5">
-                                        <div class="menu-image">
-                                            <img src="<?php echo base_url(); ?>assets/images/slider.png" class="responsive-img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="test-swipe-9" class="col s12 ">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col s7">
+                                    <div class="col m7 s12">
                                         <br><br>
                                         <h2 id="t1" class="t1-menu">Always Fresha</h2>
                                         <h2 id="t2" class="t2-menu">FEATURED DINNER</h2>
@@ -151,7 +116,42 @@
                                             </span>
                                         </a>
                                     </div>
-                                    <div class="col s5">
+                                    <div class="col m5 s12">
+                                        <div class="menu-image">
+                                            <img src="<?php echo base_url(); ?>assets/images/slider.png" class="responsive-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="test-swipe-9" class="col s12 ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col m7 s12">
+                                        <br><br>
+                                        <h2 id="t1" class="t1-menu">Always Fresha</h2>
+                                        <h2 id="t2" class="t2-menu">FEATURED DINNER</h2>
+                                        <div class="menu-content">
+                                            <span>Tumis kangkung pedas banyuwangi</span>
+                                            <p>( tambahan 20k untuk porsi besar )</p>
+                                        </div>
+                                        <div class="menu-content">
+                                            <span>Tumis sawi pedas + Sambal ijo</span>
+                                            <p>( tambahan 20k untuk porsi besar )</p>
+                                        </div>
+                                        <div class="menu-content">
+                                            <span>Cah kangkung + sambal</span>
+                                            <p>( tambahan 20k untuk porsi besar )</p>
+                                        </div>
+                                        <br><br><br>
+                                        <a class="menu-btn" href="#">
+                                            <span class="txt">OTHER DINNER MENU</span>
+                                            <span class="icon">
+                                                <img src="<?php echo base_url(); ?>assets/images/arrow-btn.png">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col m5 s12">
                                         <div class="menu-image">
                                             <img src="<?php echo base_url(); ?>assets/images/slider.png" class="responsive-img">
                                         </div>
@@ -160,12 +160,12 @@
                             </div>
                         </div>
                         <div id="test-swipe-3" class="col s12 ">
-                            <div class="container">
+                                                        <div class="container">
                                 <div class="row">
-                                    <div class="col s7">
+                                    <div class="col m7 s12">
                                         <br><br>
-                                        <h2 class="t1-menu">Always Fresh</h2>
-                                        <h2 class="t2-menu">FEATURED DINNER</h2>
+                                        <h2 id="t1" class="t1-menu">Always Fresha</h2>
+                                        <h2 id="t2" class="t2-menu">FEATURED DINNER</h2>
                                         <div class="menu-content">
                                             <span>Tumis kangkung pedas banyuwangi</span>
                                             <p>( tambahan 20k untuk porsi besar )</p>
@@ -186,7 +186,7 @@
                                             </span>
                                         </a>
                                     </div>
-                                    <div class="col s5">
+                                    <div class="col m5 s12">
                                         <div class="menu-image">
                                             <img src="<?php echo base_url(); ?>assets/images/slider.png" class="responsive-img">
                                         </div>
@@ -195,12 +195,12 @@
                             </div>
                         </div>
                         <div id="test-swipe-4" class="col s12 ">
-                            <div class="container">
+                                                        <div class="container">
                                 <div class="row">
-                                    <div class="col s7">
+                                    <div class="col m7 s12">
                                         <br><br>
-                                        <h2 class="t1-menu">Always Fresh</h2>
-                                        <h2 class="t2-menu">FEATURED DINNER</h2>
+                                        <h2 id="t1" class="t1-menu">Always Fresha</h2>
+                                        <h2 id="t2" class="t2-menu">FEATURED DINNER</h2>
                                         <div class="menu-content">
                                             <span>Tumis kangkung pedas banyuwangi</span>
                                             <p>( tambahan 20k untuk porsi besar )</p>
@@ -221,7 +221,7 @@
                                             </span>
                                         </a>
                                     </div>
-                                    <div class="col s5">
+                                    <div class="col m5 s12">
                                         <div class="menu-image">
                                             <img src="<?php echo base_url(); ?>assets/images/slider.png" class="responsive-img">
                                         </div>
@@ -229,9 +229,11 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
                     </div>
                 </div>
             </div>
+            <br>
         </div>
 
         <!-- End Content 2 -->
